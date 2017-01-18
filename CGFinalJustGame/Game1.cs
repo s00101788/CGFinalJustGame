@@ -1,6 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using GameClassLibrary;
+using System.Collections.Generic;
+using System;
 
 namespace CGFinalJustGame
 {
@@ -11,6 +14,56 @@ namespace CGFinalJustGame
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+
+        #region Declar
+
+        static Random r = new Random();
+        bool gameStarted = false;
+
+        string clientID;
+        Color playerColor = Color.Green;
+        Color enemyColor = Color.Red;
+
+        enum currentDisplay { Selection, Game, Score };
+        currentDisplay currentState = currentDisplay.Selection;
+
+        enum endGameStatuses { Win, Lose, Draw }
+        endGameStatuses gameOutcome = endGameStatuses.Draw;
+
+        Player player;
+        Player Enemy;
+
+        Menu menu;
+        string[] menuOptions = new string[] { "Fast", "Normal", "Strong" };
+
+        Vector2 startVector = new Vector2(50, 250);
+
+        Bullet newBullet;
+
+        Texture2D backgroundTexture;
+        Texture2D[] textures;
+        Texture2D textureCollectable;
+        Texture2D textureSuperCollectable;
+        Texture2D[] textureBarrier;
+        Texture2D texHealth;
+        SpriteFont message;
+
+        KeyboardState oldState, newState;
+
+        public List<Bullet> Bullets = new List<Bullet>();
+        List<Collectable> Collectables = new List<Collectable>();
+        List<Barrier> Barriers = new List<Barrier>();
+        List<Collectable> pickUp = new List<Collectable>();
+        List<Barrier> destroyBarrier = new List<Barrier>();
+        List<Bullet> destroyBullets = new List<Bullet>();
+
+
+
+
+        //static IHubProxy proxy;
+        //HubConnection connection = new HubConnection("http://localhost:5553/");
+
+        #endregion
 
 
         public Game1()
