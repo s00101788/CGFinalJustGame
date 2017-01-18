@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CGFinalJustGame", "CGFinalJustGame\CGFinalJustGame.csproj", "{F8E4B984-19F5-4133-B785-5E3BCDBACCD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameClassLibrary", "..\..\..\..\Downloads\GameAssignment\GameClassLibrary\GameClassLibrary.csproj", "{85E1CBC0-D0FD-40E4-8BBA-E8EA033EF64C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameClassLibrary", "GameClassLibrary\GameClassLibrary.csproj", "{85E1CBC0-D0FD-40E4-8BBA-E8EA033EF64C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

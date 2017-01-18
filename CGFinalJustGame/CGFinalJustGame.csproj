@@ -56,7 +56,7 @@
     <MonoGameContentReference Include="Content\Content.mgcb" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Downloads\GameAssignment\GameClassLibrary\GameClassLibrary.csproj">
+    <ProjectReference Include="..\GameClassLibrary\GameClassLibrary.csproj">
       <Project>{85e1cbc0-d0fd-40e4-8bba-e8ea033ef64c}</Project>
       <Name>GameClassLibrary</Name>
     </ProjectReference>
